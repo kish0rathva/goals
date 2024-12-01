@@ -64,4 +64,6 @@ When to Use:
 - Any potentially unreliable service interaction
 
 
-refer: https://medium.com/@sagargupta138/opossum-for-circuit-breakers-for-your-nodejs-systems-5a0893c83e2a
+refer: 
+- https://medium.com/@sagargupta138/opossum-for-circuit-breakers-for-your-nodejs-systems-5a0893c83e2a
+- https://medium.com/@erickzanetti/building-resilient-apis-with-node-js-47727d38d2a9

@@ -52,9 +52,9 @@ function fallbackUserData(userId) {
 // Circuit Breaker Configuration
 function createUserDataCircuitBreaker() {
   const breaker = new CircuitBreaker(fetchUserData, {
-    timeout: 500, // 0.5 seconds
+    timeout: 3000, // 3 seconds
     errorThresholdPercentage: 50, // Open circuit if 50% of requests fail
-    resetTimeout: 1000 // 30 seconds before trying again
+    resetTimeout: 5000 // 5 seconds before trying again
   });
 
   // Add event listeners for circuit breaker states
