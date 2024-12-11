@@ -1,4 +1,26 @@
+### **Functional Requirements**:
+- **User Authentication**: Sign up, log in, and secure authentication via AuthService.
+- **Betting Service**: Allow users to place bets, view match data, and manage their teams via BettingService.
+- **Leaderboard**: Display real-time rankings and scores through LeaderboardService.
+- **Notifications**: Notify users about match updates, betting status, and leaderboard changes.
+- **API Gateway**: Route requests from users to appropriate services (Authentication, Betting, Leaderboard).
+- **Database Management**: Store user data, bets, and match information in the Database Cluster.
+- **Queue Management**: Handle asynchronous tasks and data processing via QueueService.
+- **Caching**: Use CacheLayer for fast access to frequently requested data (e.g., leaderboards, match stats).
 
+---
+
+### **Non-Functional Requirements**:
+- **Scalability**: Support up to 1 million concurrent users through Load Balancer and API Gateway.
+- **High Availability**: Ensure system uptime of 99.9%, with redundancy and auto-scaling.
+- **Performance**: APIs should respond within 2 seconds, handling high traffic loads.
+- **Security**: Implement data encryption, secure authentication (AuthService), and secure transactions.
+- **Fault Tolerance**: The system should recover from failures within minutes, with failover capabilities.
+- **Monitoring & Logging**: Track system performance, errors, and usage via Monitoring/Logging for troubleshooting.
+- **Data Consistency**: Ensure consistency in leaderboard rankings and bet data using DatabaseCluster and CacheLayer.
+- **Latency**: Reduce latency by using CacheLayer and QueueService for faster data retrieval and processing.
+
+---
 
 ```mermaid
 graph TD
